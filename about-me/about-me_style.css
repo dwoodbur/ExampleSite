@@ -1,0 +1,120 @@
+html {
+	background: black;
+	min-height: 100%; }
+
+body { padding-top: 15px; }
+
+#wrapper { margin: 0 auto; max-width: 1400px; min-width: 600px;  max-height: 3000px; background: black; }
+
+.head { 
+	background-color: black;
+	height: 130px;
+	position: relative;
+}
+
+.pageTitle {
+	background-color: black;
+	height: 65px;
+	position: relative;
+}
+
+.leftside {
+	float: left;
+	width: 10%;
+	height: 470px;
+	background-color: black;
+	margin-right: .5%;
+	margin-top: 75px;
+}
+
+.maincontent {
+	float: left;
+	width: 73.5%;
+	margin-top: 25px;
+	padding-left: 1%;
+	padding-top: 10px;
+}
+
+.description {
+	background-color: #FFFFFF;
+	padding-left: 1%;
+	padding-top: 5px;
+}
+
+.rightside {
+	float: left;
+	width: 12.5%;
+	height: 470px;
+	background-color: black;
+	margin-left: 2.5%;
+	margin-top: 25px;
+}
+
+.seperator {
+	float: left;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 4px;
+	background-color: black;
+	margin-top: 10px;
+}
+
+.menuOpt {
+	float: left;
+	margin-bottom: 4px;
+	background-color: #FFFFFF;
+	height: 25px;
+	width: 90%;
+}
+
+.box {
+	float: left;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+
+#homeOpt {
+	background-image:url('images/Home.png');
+}
+
+#tutorialsOpt {
+	background-image:url('images/Tutorials.png');
+}
+
+#articlesOpt {
+	background-image:url('images/Articles.png');
+}
+
+#gamesOpt {
+	background-image:url('images/Games.png');
+}
+
+#informationOpt {
+	background-image:url('images/Information.png');
+}
+
+
+#homeOpt:hover {
+    background-image:url('images/Home2.png');
+}
+
+#tutorialsOpt:hover {
+    background-image:url('images/Tutorials2.png');
+}
+
+#articlesOpt:hover {
+    background-image:url('images/Articles2.png');
+}
+
+#gamesOpt:hover {
+    background-image:url('images/Games2.png');
+}
+
+#informationOpt:hover {
+    background-image:url('images/Information2.png');
+}
+
+.link_my:hover{
+	font-weight: bold;
+}

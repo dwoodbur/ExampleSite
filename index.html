@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Dylan Woodbury - Center for Programming and Game Design</title>
+        <link rel="stylesheet" href="mainstyle.css">
+        <meta name="keywords" content="program, game, design, programming, tutorials, how, video, dylan, woodbury, designer, articles">
+        <meta name="description" content="The complete center for learning and practicing programming and game design">
+        <meta name="author" content="Dylan Woodbury">
+        <script defer src="main.js"></script>
+        <script src="Game.js"></script>
+        <script src="Player.js"></script>
+        <script src="Bullet.js"></script>
+        <script src="UFO.js"></script>
+        <script src="Enemy.js"></script>
+        <script src="Torpedo.js"></script>
+        <script src="Projectile.js"></script>
+        <script src="LogoPiece.js"></script>
+        <script src="Star.js"></script>
+        <script src="World.js"></script>
+        
+        <script src="KeyListener.js"></script>
+        <script>
+        window.addEventListener("keydown", function(e) {
+    	// space and arrow keys
+    	if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+    	    e.preventDefault();
+    		}
+		}, false);
+		</script>
+    </head>
+    <body>
+        <div id="wrapper">
+        	<div class="head">
+        		<img src="images/Logo2.png" height="130" height="130">
+ 				<canvas id="game" width = 1400 height=130 style="position: absolute; left: 0; top: 0;"></canvas>
+        	</div>
+      	  		<div class="leftside">
+      	  			<div class="menuOpt" id="homeOpt" onclick="window.location = 'index.html'"></div>
+      	  			<div class="menuOpt" id="tutorialsOpt" onclick="window.location = 'tutorials/'"></div>
+      	  			<div class="menuOpt" id="articlesOpt" onclick="window.location = 'articles/'"></div>
+      	  			<div class="menuOpt" id="gamesOpt" onclick="window.location = 'games/'"></div>
+      	  			<div class="menuOpt" id="informationOpt" onclick="window.location = 'about-me/'"></div>
+
+        		</div>
+        	
+        		<div class="maincontent">
+        			<div class="leftcol">
+						<div class="colhead">
+							Featured Tutorials
+						</div>
+						<div class="leftBox">
+							<div class="boxTitle">
+								<a href="tutorial1.html" class="link_my" style="text-decoration: none; color: #000000;">Beginning Java Programming</a>
+							</div>
+							<div class="boxDescription">
+								The course for anyone interested in starting to program. Starts at the absolute basics, sets you up for a lifetime of programming.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+						</div>
+						<div class="leftBox">
+							<div class="boxTitle">
+								<a href="tutorial2.html" class="link_my" style="text-decoration: none; color: #000000;">Intro to HTML5 Game Development</a>
+							</div>
+							<div class="boxDescription">
+								An engine-oriented approach to game development, focused on building the structure of the game. A great entry into game design.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+						</div>
+						<div class="leftBox">
+							<div class="boxTitle">
+								<a href="tutorial3.html" class="link_my" style="text-decoration: none; color: #000000;">Java ADT Programming</a>
+							</div>
+							<div class="boxDescription">
+								Here we tacke building abstract-data-types, essential for anyone serious in computer science. Lists, trees, tables, and graphs are covered.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+						</div>
+						<div class="leftBox">
+							<div class="boxTitle">
+								<a href="tutorial4.html" class="link_my" style="text-decoration: none; color: #000000;">C Programming</a>
+							</div>
+							<div class="boxDescription">
+								Unlike newer languages, C goes deeper into the hood of the computer. Learn, from the basics, all of the useful facets of this monumental language.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+						</div>
+						<div class="leftBox">
+							<div class="boxTitle">
+								<a href="tutorials/" class="link_my" style="text-decoration: none; color: #000000;">View All Tutorials</a>
+							</div>
+						</div>
+						
+					</div>
+        			<div class="centcol">
+        				<div class="colhead">
+        					Featured Articles
+        				</div>
+        				<div class="centBox">
+        					<div class="boxTitle">
+								<a href="article1.html" class="link_my" style="text-decoration: none; color: #000000;">Game Education and Ideas</a>
+							</div>
+							<div class="boxDescription">
+								How the educational system of the games industry is destroying students of the art and squandering the potential of video games.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="centBox">
+        					<div class="boxTitle">
+								<a href="article2.html" class="link_my" style="text-decoration: none; color: #000000;">Review: The Eclectic Under</a>
+							</div>
+							<div class="boxDescription">
+								A turn-based MMO puzzle shooter, Eclectic takes a whole new stance on organized religion.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="centBox">
+        					<div class="boxTitle">
+								<a href="article3.html" class="link_my" style="text-decoration: none; color: #000000;">Reinventing Text Adventures</a>
+							</div>
+							<div class="boxDescription">
+								The time has come to bring back one of gaming's oldest genres, and what it can lend to today's games atmosphere.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="centBox">
+        					<div class="boxTitle">
+								<a href="article4.html" class="link_my" style="text-decoration: none; color: #000000;">Capturing Feeling in Games</a>
+							</div>
+							<div class="boxDescription">
+								Using the procedural rhetoric of games to express feeligns in ways words or pictures never have been able to.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="centBox">
+        					<div class="boxTitle">
+								<a href="articles/" class="link_my" style="text-decoration: none; color: #000000;">View All Articles</a>
+							</div>
+        				</div>
+        				
+        			</div>
+        			<div class="rightcol">
+        				<div class="colhead">
+        					Featured Games
+        				</div>
+        				<div class="rightBox">
+        					<div class="boxTitle">
+								<a href="game1.html" class="link_my" style="text-decoration: none; color: #000000;">Don't Go Gently</a>
+							</div>
+							<div class="boxDescription">
+								An action-adventure, Zelda inspired look at death. Published here Dec 22 2014.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="rightBox">
+        					<div class="boxTitle">
+								<a href="game2.html" class="link_my" style="text-decoration: none; color: #000000;">Gnop</a>
+							</div>
+							<div class="boxDescription">
+								It's pong. The example for the tutorial series on how to build a pong clone.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="rightBox">
+        					<div class="boxTitle">
+								<a href="game3.html" class="link_my" style="text-decoration: none; color: #000000;">Melancholy and the Pursuit</a>
+							</div>
+							<div class="boxDescription">
+								Ever thought about what it would be like to fly to heaven? A game built on a dream.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="rightBox">
+        					<div class="boxTitle">
+								<a href="game4.html" class="link_my" style="text-decoration: none; color: #000000;">Space Invaders</a>
+							</div>
+							<div class="boxDescription">
+								Space Invaders clone presented as the example for the tutorial series.
+							</div>
+							<div class="boxImage">
+								<img class="box_img" width=80% src="images/homer.jpg">
+							</div>
+        				</div>
+        				<div class="rightBox">
+        					<div class="boxTitle">
+								<a href="games/" class="link_my" style="text-decoration: none; color: #000000;">View All Games</a>
+							</div>
+        				</div>
+        				
+        			</div>
+        			
+        			<div class="seperator"></div>
+   		
+        		<div class="rightside"></div>
+        	</div>
+        </div>
+</html>

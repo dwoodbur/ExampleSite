@@ -1,0 +1,166 @@
+html {
+	background: black;
+	min-height: 100%; }
+
+body { padding-top: 15px; }
+
+#wrapper { margin: 0 auto; max-width: 1400px; min-width: 600px;  max-height: 3000px; background: black; }
+
+.head { 
+	background-color: black;
+	height: 130px;
+	position: relative;
+}
+
+.pageTitle {
+	background-color: black;
+	height: 65px;
+	position: relative;
+}
+
+.leftside {
+	float: left;
+	width: 10%;
+	height: 470px;
+	background-color: black;
+	margin-right: .5%;
+	margin-top: 75px;
+}
+
+.maincontent {
+	float: left;
+	width: 74.5%;
+	background-color: black;
+	margin-top: 25px;
+}
+
+.rightside {
+	float: left;
+	width: 12.5%;
+	height: 470px;
+	background-color: black;
+	margin-left: 2.5%;
+	margin-top: 25px;
+}
+
+.seperator {
+	float: left;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 4px;
+	background-color: black;
+	margin-top: 10px;
+}
+
+.menuOpt {
+	float: left;
+	margin-bottom: 4px;
+	background-color: #FFFFFF;
+	height: 25px;
+	width: 90%;
+}
+
+.title {
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	padding-left: 0%;
+	width: 100%;
+	font: 40px "Trebuchet MS";
+	font-weight: bold;
+	text-align: center;
+}
+
+.articleinfo {
+	background-color: #FFFFFF;
+	text-align: center;
+	font: 14px "Trebuchet MS";
+	margin-bottom: 10px;
+	height: 25px;
+}
+
+.article {
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+	font: 18px "Trebuchet MS";
+	text-indent: 50px;
+}
+
+.article br {
+	line-height: 40px;
+	text-indent: 50px;
+}
+
+.img_cap {
+	font: 16px "Trebuchet MS";
+	text-align: center;
+}
+
+#leftimg {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#centimg {
+	display: block;
+	margin: auto;
+}
+
+#rightimg {
+	display: block;
+	float: right;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#homeOpt {
+	background-image:url('images/Home.png');
+}
+
+#tutorialsOpt {
+	background-image:url('images/Tutorials.png');
+}
+
+#articlesOpt {
+	background-image:url('images/Articles.png');
+}
+
+#gamesOpt {
+	background-image:url('images/Games.png');
+}
+
+#informationOpt {
+	background-image:url('images/Information.png');
+}
+
+
+#homeOpt:hover {
+    background-image:url('images/Home2.png');
+}
+
+#tutorialsOpt:hover {
+    background-image:url('images/Tutorials2.png');
+}
+
+#articlesOpt:hover {
+    background-image:url('images/Articles2.png');
+}
+
+#gamesOpt:hover {
+    background-image:url('images/Games2.png');
+}
+
+#informationOpt:hover {
+    background-image:url('images/Information2.png');
+}
+
+.link_my:hover{
+	font-weight: bold;
+}
